@@ -5,7 +5,7 @@ const getDashboardData = async (req, res) => {
       const token = req.headers.authorization.split(' ')[1];
 
       // Fetch exercise logs
-      const exerciseResponse = await axios.get(`https://seal-app-buzkz.ondigitalocean.app/api/log-exercise`, {
+      const exerciseResponse = await axios.get(`https://sea-turtle-app-a95e9.ondigitalocean.app/api/log-exercise`, {
           headers: {
               Authorization: `Bearer ${token}`,
           },
@@ -14,7 +14,7 @@ const getDashboardData = async (req, res) => {
       const exercises = exerciseResponse.data.logs || [];
 
       // Fetch goals
-      const goalsResponse = await axios.get(`https://seal-app-buzkz.ondigitalocean.app/api/goals`, {
+      const goalsResponse = await axios.get(`https://sea-turtle-app-a95e9.ondigitalocean.app/api/goals`, {
           headers: {
               Authorization: `Bearer ${token}`,
           },
@@ -23,7 +23,7 @@ const getDashboardData = async (req, res) => {
       const goals = goalsResponse.data.goals || [];
 
       // Fetch progress
-      const progressResponse = await axios.get(`https://seal-app-buzkz.ondigitalocean.app/api/progress`, {
+      const progressResponse = await axios.get(`https://sea-turtle-app-a95e9.ondigitalocean.app/api/progress`, {
           headers: {
               Authorization: `Bearer ${token}`,
           },

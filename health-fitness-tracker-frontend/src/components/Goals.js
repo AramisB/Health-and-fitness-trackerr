@@ -13,7 +13,7 @@ function Goals() {
     e.preventDefault();
     try {
       const token = user.token; // Use the token from the user context
-      const response = await fetch('https://seal-app-buzkz.ondigitalocean.app/api/goals', {
+      const response = await fetch('https://sea-turtle-app-a95e9.ondigitalocean.app/api/goals', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

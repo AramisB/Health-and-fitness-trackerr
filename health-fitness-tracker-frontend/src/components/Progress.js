@@ -13,7 +13,7 @@ function Progress() {
       if (user) {
         try {
           const token = user.token; // Use the token from the user context
-          const response = await fetch('https://seal-app-buzkz.ondigitalocean.app/api/progress', {
+          const response = await fetch('https://sea-turtle-app-a95e9.ondigitalocean.app/api/progress', {
             method: 'GET',
             headers: {
               Authorization: `Bearer ${token}`,

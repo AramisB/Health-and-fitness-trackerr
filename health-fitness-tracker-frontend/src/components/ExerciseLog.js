@@ -22,7 +22,7 @@ function ExerciseLog() {
     console.log('Sending exercise data:', exerciseData);
   
     try {
-      const response = await fetch('https://seal-app-buzkz.ondigitalocean.app/api/log-exercise', {
+      const response = await fetch('https://sea-turtle-app-a95e9.ondigitalocean.app/api/log-exercise', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

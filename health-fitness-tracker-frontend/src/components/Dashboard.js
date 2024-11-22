@@ -14,7 +14,7 @@ const Dashboard = () => {
       const fetchData = async () => {
         try {
           console.log('Fetching dashboard data with token:', user.token);
-          const response = await axios.get("https://seal-app-buzkz.ondigitalocean.app/api/dashboard", {
+          const response = await axios.get("https://sea-turtle-app-a95e9.ondigitalocean.app/api/dashboard", {
             headers: {
               Authorization: `Bearer ${user.token}`,
             },
