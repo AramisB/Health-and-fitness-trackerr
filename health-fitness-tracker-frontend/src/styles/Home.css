@@ -1,0 +1,94 @@
+.home-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  padding: 20px; /* Adjusted padding for smaller screens */
+  background-color: #f0f8ff; /* Light background color */
+  height: 100vh; /* Full height of the viewport */
+  text-align: center; /* Center align all text */
+}
+
+.home-image {
+  max-width: 100%; /* Allow the image to take full width on small screens */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px; /* Rounded corners for the image */
+  margin-bottom: 30px; /* Increased space below image */
+}
+
+.home-text {
+  max-width: 600px; /* Limit text width */
+  background-color: #ffffff; /* White background for text container */
+  padding: 20px; /* Padding for inner spacing */
+  border-radius: 10px; /* Rounded corners for text container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.home-text h2 {
+  font-size: 2.5rem; /* Main title size */
+  color: #333; /* Darker color for the header */
+  margin-bottom: 20px; /* Space below main title */
+}
+
+.home-text h3 {
+  color: #007bff; /* Change color for subheadings */
+  font-size: 1.8rem; /* Adjusted size of subheadings */
+  margin-top: 20px; /* Space above subheadings */
+  margin-bottom: 10px; /* Space below subheadings */
+}
+
+.home-text p {
+  color: #555; /* Color for paragraphs */
+  margin-bottom: 20px; /* Increased space below paragraphs */
+}
+
+.home-text ul {
+  margin-left: 20px; /* Indent list items */
+  text-align: left; /* Left align list items for better readability */
+}
+
+.home-text ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Responsive styles */
+@media (min-width: 769px) {
+  .home-container {
+    flex-direction: row; /* Side by side on larger screens */
+    justify-content: space-around; /* Space out items evenly */
+    height: auto; /* Allow the container to resize with content */
+  }
+
+  .home-image {
+    max-width: 300px; /* Adjust image size on larger screens */
+    margin-bottom: 0; /* Remove margin below the image */
+  }
+
+  .home-text {
+    text-align: left; /* Left-align text for better readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-text h2 {
+    font-size: 1.8rem; /* Reduce size for medium screens */
+  }
+  
+  .home-text h3 {
+    font-size: 1.5rem; /* Adjust size of subheadings */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-text h2 {
+    font-size: 1.5rem; /* Further reduce size for small screens */
+  }
+  
+  .home-text h3 {
+    font-size: 1.2rem; /* Adjust size for subheadings */
+  }
+  
+  .home-text p {
+    font-size: 0.9rem; /* Slightly smaller text for paragraphs */
+  }
+}

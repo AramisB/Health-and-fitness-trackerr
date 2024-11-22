@@ -1,0 +1,108 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5; /* Light background for contrast */
+}
+
+.container {
+  width: 100%; /* Full width */
+  max-width: 800px; /* Constrain max width */
+  margin: auto; /* Center the container */
+  padding: 20px; /* Add padding */
+}
+
+/* Gradient form section */
+.gradient-form {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+}
+
+/* Card styling */
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Added transition for hover effect */
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Card body */
+.card-body {
+  padding: 2rem;
+}
+
+/* Form outline */
+.form-outline {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+/* Inputs */
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Added transition */
+}
+
+.form-control:focus {
+  border-color: #6a11cb; /* Color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(106, 17, 203, 0.25); /* Focus shadow */
+}
+
+/* Button styles */
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s; /* Added transition */
+}
+
+.btn-primary {
+  background-color: #6a11cb; /* Primary color */
+  border: none;
+  color: white; /* Text color */
+}
+
+.btn-primary:hover {
+  background-color: #2575fc; /* Darker shade on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Error message */
+.text-danger {
+  color: #dc3545; /* Bootstrap's danger color */
+}
+
+/* Links */
+a {
+  color: #6a11cb; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Additional styling */
+.gradient-custom-2 {
+  background: linear-gradient(to right, #8cc703, #d6cacf); /* Gradient for right side */
+}
+
+.text-white {
+  color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    margin: 1rem;
+  }
+}

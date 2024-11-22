@@ -1,0 +1,104 @@
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full height */
+}
+
+/* Gradient background for the registration section */
+.gradient-form {
+  background: linear-gradient(to right, #0e0a4e, #326f83); /* Soft blue gradient */
+  color: #333; /* Dark text for contrast */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 80%; /* Full height */
+}
+
+/* Card styles */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Slightly heavier shadow for depth */
+  background-color: white; /* White background for the card */
+  width: 80%; /* Full width on smaller devices */
+}
+
+/* Inner card body styles */
+.card-body {
+  padding: 2rem;
+}
+
+/* Header styles */
+h4 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #0c93c0; /* Primary color for headings */
+}
+
+/* Form label styles */
+.form-label {
+  font-weight: 500;
+  color: #555; /* Darker color for labels */
+}
+
+/* Form control styles */
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px; /* Increased padding for better touch targets */
+  transition: border-color 0.3s;
+}
+
+/* Focus state for form controls */
+.form-control:focus {
+  border-color: #00BFFF; /* Primary color on focus */
+  outline: none;
+}
+
+/* Button styles */
+.btn {
+  background-color: #00BFFF; /* Primary button color */
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+/* Button hover state */
+.btn:hover {
+  background-color: #0093CC; /* Darker shade on hover */
+}
+
+/* Error message styles */
+.text-danger {
+  color: #dc3545; /* Bootstrap danger color */
+}
+
+/* Link styles */
+a {
+  color: #121618; /* Link color */
+}
+
+a:hover {
+  color: #0093CC; /* Darker shade on hover */
+}
+
+.custom-container {
+  width: 80%; /* Adjust the width as needed */
+  margin: auto; /* Center the container */
+  padding: 20px; /* Add padding */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%; /* Full width on small devices */
+  }
+
+  h4 {
+    font-size: 1.8rem; /* Responsive header font size */
+  }
+}
