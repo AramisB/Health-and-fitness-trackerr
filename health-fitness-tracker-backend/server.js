@@ -12,7 +12,7 @@ const path = require('path');
 
 const app = express();
 const allowedOrigins = [
-    'https://monkfish-app-od5cu.ondigitalocean.app',
+    'https://octopus-app-k3q7m.ondigitalocean.app',
 ];
 
 // Connect Database
