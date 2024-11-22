@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
   // Login function
   const login = async (email, password) => {
     try {
-      const response = await fetch('https://seal-app-buzkz.ondigitalocean.app/api/login', {
+      const response = await fetch('https://sea-turtle-app-a95e9.ondigitalocean.app/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export const AuthProvider = ({ children }) => {
   // Register function
   const register = async (name, email, password) => {
     try {
-      const response = await fetch('https://seal-app-buzkz.ondigitalocean.app/api/register', {
+      const response = await fetch('https://sea-turtle-app-a95e9.ondigitalocean.app/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
